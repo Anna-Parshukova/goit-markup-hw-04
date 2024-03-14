@@ -35,14 +35,14 @@ p, h1, h2, h3, h4, h5, h6{
 
 .header{
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container{
     display: flex;
     align-items: center;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 1px 6px rgba(46, 47, 66, 0.08);;
 }
 
 .navigation {
@@ -82,7 +82,7 @@ p, h1, h2, h3, h4, h5, h6{
         color: #2E2F42;
         padding: 24px 0;
         display: block;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -145,6 +145,7 @@ p, h1, h2, h3, h4, h5, h6{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    max-width: 1440px;
 }
 
 .solution-title {
@@ -238,9 +239,6 @@ width: calc((100% - 72px)/4);
 }
 
 .topics-elem-item{   
-
-}
-.topics-item-el{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -251,6 +249,7 @@ width: calc((100% - 72px)/4);
     margin-bottom: 8px;
     width: 264px;
 }
+
 
 
 /* SECTION 3 */
@@ -333,7 +332,7 @@ width: calc((100% - 72px)/4);
     align-items: center;
     justify-content: center;
     display: flex;
-
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .team-elem-icon:hover,
@@ -368,7 +367,8 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .portfolio-list-item {
 width: calc((100% - 48px)/3);
-transform: 250ms cubic-bezier(0.4, 0, 0.2, 1); ;
+transform: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item:hover .portfolio-cover-text{
@@ -477,7 +477,7 @@ margin-right: 120px
 
 .footer-icon{
     fill:#F4F4FD;
-    
+
 }
 
 .footer-elem-item{
@@ -493,11 +493,14 @@ margin-right: 120px
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .elem-icon:hover,
-.elem-icon:focus{
+.elem-icon:focus {
     background-color: #31D0AA;
+}
+.elem-icon:focus{
+    background-color: #31d0aa;
 }
 
 .footer-elem-container{
