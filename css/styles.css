@@ -119,7 +119,7 @@ p, h1, h2, h3, h4, h5, h6{
         letter-spacing: 0.02em;
         color: #434455;
         padding: 24px 0;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -140,13 +140,15 @@ p, h1, h2, h3, h4, h5, h6{
     box-sizing: content-box;
     padding-top: 188px;
     padding-bottom: 188px;
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(/images/img-11.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/img-11.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     max-width: 1440px;
+    margin: auto;
 }
+
+
 
 .solution-title {
         font-weight: 700;
@@ -231,6 +233,18 @@ width: calc((100% - 72px)/4);
         color: #434455;
 }
 
+.topic-elem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    margin-bottom: 8px;
+
+}
+/*
 .topics-elem-list{
     display: flex;
     margin-bottom: 32px;
@@ -332,7 +346,7 @@ width: calc((100% - 72px)/4);
     align-items: center;
     justify-content: center;
     display: flex;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-elem-icon:hover,
@@ -447,7 +461,7 @@ overflow: hidden;
 }
 
 .logo-footer-cont{
-margin-right: 120px
+margin-right: 120px;
 }
 
 .foot-text {
@@ -495,16 +509,18 @@ margin-right: 120px
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.elem-icon:hover,
-.elem-icon:focus {
+.elem-icon:hover {
     background-color: #31D0AA;
 }
 .elem-icon:focus{
     background-color: #31d0aa;
 }
 
-.footer-elem-container{
+.elem-cont{
+    
+}
+
+.element-container{
     display: flex;
     align-items: baseline;
-
 }
